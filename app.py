@@ -29,12 +29,12 @@ def random_album():  # put application's code here
         print(list_of_tracks)
         return render_template('album_page.html', artist=artist, album_image=album_cover,
                                album_title=album_name, year=year, country=country, list_of_tracks=list_of_tracks)
-    return render_template('index.html')
+    return render_template('about.html')
 
 
 @app.route('/about')
 def about():
-    return render_template('index.html')
+    return render_template('about.html')
 
 
 if __name__ == '__main__':
